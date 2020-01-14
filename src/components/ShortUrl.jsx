@@ -32,7 +32,7 @@ class ShortUrl extends React.Component {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (err) {
-        console.log("err");
+        console.log(err);
         return;
       } else {
         let { longUrl } = this.state;
@@ -108,7 +108,7 @@ class ShortUrl extends React.Component {
             })(
               <Input
                 allowClear
-                addonBefore="www.pocketurl/"
+                addonBefore="https://pocket-url.herokuapp.com"
                 placeholder="Custom Name"
                 onChange={this.handleCustomValueChange}
               />

@@ -7,7 +7,6 @@ import "./../styles/style.less";
 
 export class Header extends Component {
   goToRoute = route => () => {
-    console.log(route);
     history.push(route);
   };
 
